@@ -3,7 +3,7 @@ import { getConfirmation } from './DOMUtils';
 
 export interface MemoryHistoryBuildOptions {
   getUserConfirmation?: typeof getConfirmation;
-  initialEntries?: string[];
+  initialEntries?: (string | Partial<Location>)[];
   initialIndex?: number;
   keyLength?: number;
 }
